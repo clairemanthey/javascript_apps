@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+  <html lang="en">
+
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="invoice_creator.css">
+      <script src="invoice_creator.js" defer></script>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+      <title>Invoice Creator</title>
+    </head>
+
+    <body>
+      <main class="flex-column main-container">
+        <section class="top flex-column">
+          <h1 class="heading fs-800">Invoice Creator</h1>
+          <p class="para fs-500">Thanks for choosing GoodCorp, LLC!</p>
+        </section>
+        <section class="bottom">
+          <article class="btn-container flex-row">
+            <button class="btn" id="btn__wash-car"></button> 
+            <button class="btn" id="btn__mow-lawn"></button>
+            <button class="btn" id="btn__pull-weeds"></button>
+          </article>
+          <article class="flex-row task-total">
+            <p class="pOne fs-200">Task</p>
+            <p class="pTwo fs-200">Total</p>
+          </article> 
+
+          <article>
+
+          </article>
+
+          <article class="display-container">
+            <div class="flex-row display">
+              <div class="display-cost">
+                <ul id="wash"></ul>
+                <ul id="wash-date"></ul>
+                <ul id="remove-wash"></ul>
+              </div>        
+              <ul id="wash-cost"></ul>
+            </div>
+            <div class="flex-row display">
+              <div class="display-cost">
+                <ul id="mow"></ul>
+                <ul id="mow-date"></ul>
+                <ul id="remove-mow"></ul>
+              </div>        
+              <ul id="mow-cost"></ul>
+            </div>
+            <div class="flex-row display"> 
+              <div class="display-cost">
+                <ul id="pull"></ul>
+                <ul id="pull-date"></ul>
+                <ul id="remove-pull"></ul>
+              </div>
+              <ul id="pull-cost"></ul>
+            </div>
+          </article>
+
+          <div class="line"></div>
+          
+          <article class="flex-row total">
+            <p class="fs-200">Notes</p>
+            <p class="fs-200">Total Amount</p>
+          </article>
+          <article class="flex-row total-container">
+            <textarea rows="5" class="text-area" id="text-area"></textarea>
+            <div class="total-number">
+              <p class="fs-700">$</p>
+              <p class="fs-700" id="total-amount">0</p>
+            </div>
+          </article>      
+          
+          <button class="btn__send" id="btn__send"><img src="icon.png" alt="send icon" class="send_icon">Send Invoice</button>
+        </section>
+
+        <section class="modal" id="whole-modal">
+          <article class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Invoice Submitted</h2>
+          </article>
+        </section>
+      </main>
+    </body>
+  </html>

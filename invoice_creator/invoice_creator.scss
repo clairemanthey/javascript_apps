@@ -1,0 +1,249 @@
+$bg: #111827;
+$accent: #047857;
+$accent-dark: #1F2937;
+$btn-light: #A7F3D0;
+$text: #F9FAFB;
+
+$fs-900: 3rem;
+$fs-800: 2.5rem;
+$fs-700: 2rem;
+$fs-600: 1.5rem;
+$fs-500: 1rem;
+$fs-400: 0.9375rem;
+$fs-300: 0.875rem;
+$fs-200: 0.75rem;
+$fs-100: 0.5rem;
+
+.fs-900 { font-size: $fs-900; }
+.fs-800 { font-size: $fs-800; }
+.fs-700 { font-size: $fs-700; }
+.fs-600 { font-size: $fs-600; }
+.fs-500 { font-size: $fs-500; }
+.fs-400 { font-size: $fs-400; }
+.fs-300 { font-size: $fs-300; }
+.fs-200 { font-size: $fs-200; }
+.fs-100 { font-size: $fs-100; }
+
+$main-font: 'Inter', sans-serif;
+h1, p{
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background: $bg;
+    color: $text;
+    font-family: $main-font;
+    box-sizing:border-box;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.main-container{
+    border: 1px solid white;
+    margin: 10px auto;
+    width: 33rem;
+    box-sizing: border-box;
+}
+
+.top{
+    background:$accent;
+    width: 100%;
+    height: 100%;
+    padding: 2rem 2.5rem;
+    box-sizing: border-box;
+}
+
+.heading{
+    margin: 0 0 0.5rem 0;
+}
+
+.para{
+    padding: 0 0 1.5rem 0;
+}
+
+.bottom{
+    background: $accent-dark;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 2rem 2.5rem 2rem;
+}
+
+.btn-container{
+    justify-content: space-evenly;
+    padding: 0 0 2.5rem 0;
+}
+
+.display-container{
+    margin-left: -0.5rem;
+}
+
+.btn{
+    background-color: $btn-light;
+    border: 1px solid $btn-light;
+    border-radius: 7px;
+    padding: 9px 13px;
+    font-size: $fs-300;
+}
+
+.task-total{
+    justify-content: space-between;
+}
+
+.pTwo{
+    justify-self: flex-end;
+}
+
+.total{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 0 2rem 0;
+}
+
+.btn__send{
+    box-sizing: border-box;
+    display: block;
+    margin: 0 auto;
+    background:$accent;
+    border: 1px solid $accent;
+    border-radius: 7px;
+    width: 100%;
+    color: $btn-light;
+    padding: 9px 17px;
+    font-size: 1.1rem;
+}
+
+.send_icon{
+    padding: 0 0.75rem;
+}
+
+.line{
+    height: 1px;
+    background: white;
+    margin: 1.5rem 0;
+}
+
+.jobs-info{
+    justify-content: space-between;
+}
+
+.cost-container{
+    border: 2px solid red;
+    flex-direction: column;
+}
+
+.btn-remove{
+    font-size: $fs-100;
+    border: none;
+    background-color: transparent;
+    color: #D5D4D8;
+    margin: auto 0;
+}
+
+.display{
+    justify-content: space-between;
+    margin: 1.5rem 0;
+}
+
+.display-cost{
+    display: flex;
+    flex-direction: row;
+}
+
+#remove-wash, #remove-mow, #remove-pull, .date-input{
+    display: flex;
+    flex-direction: column;
+}
+
+.date-input{
+    flex-direction: row;
+}
+
+.wash-list-item, .btn-remove-wash, .mow-list-item, .btn-remove-mow, .pull-list-item, .btn-remove-pull{
+    margin: 0.25rem 0.5rem;
+
+}
+
+.wash-list-item, .mow-list-item, .pull-list-item{
+    width: 7rem;
+    font-weight: bold;
+}
+
+.btn-remove-wash, .btn-remove-mow, .btn-remove-pull{
+    background: transparent;
+    border: none;
+    color: $btn-light;
+    font-weight: bold;
+}
+
+.total-container{
+    justify-content: space-between;
+    padding: 0 0 1.5rem 0;
+}
+
+.total-number{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.text-area{
+    width: 62%;
+}
+//Modal
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content{
+    box-sizing:border-box;
+    background: $accent-dark;
+    margin: 15% auto;
+    padding: 30px 20px;
+    border: 1px solid $accent-dark;;
+    width: 30%;
+    color: $btn-light;
+    border-radius: 7px;
+}
+
+.close{
+    color: $btn-light;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus{
+    color: $accent;
+    text-decoration: none;
+    cursor: pointer;
+}
