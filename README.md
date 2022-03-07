@@ -1,1 +1,3 @@
 # javascript_apps
+Projects from Scrimba's Learn JavaScript for Free course. JavaScript was taught through projects building different apps. These apps included a train passenger counter app, a blackjack app, a random password generator app, a measurement converter app, and an invoice creator app. The course started with the basics of JavaScript and built strong skills through hands on practice. For the each of the proejces there were basic goals along with stretch goals to practice JavaScript.
+For the invoice creator app I added a date input for each job so they user could enter the date on each job letting their customer know when the service was delivered.
