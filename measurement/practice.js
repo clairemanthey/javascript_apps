@@ -1,6 +1,6 @@
 let startNumber = document.getElementById("number");
 startNumber.innerHTML = 20;
-startNumber = 20;x
+startNumber = 20;
 
 
 function convert(){
