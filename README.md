@@ -33,13 +33,14 @@ This project was to build a web application that has the functionality of a blac
 For this project I built a web application that creates random passwords. On a button click the user can create 4 different random passwords. It also has functionality to copy each password by clicking the copy button. 
 
 ### Invoice Creator
-![My Image](image/image-invoice.png)
+![My Image](images/image-invoice.png)
 
 Built an invoice creator with JavaScript. The user can choose between the services to add a service to the invoice with a button click. The user can add the date the service was delivered on the invoice. The cost of each service is added and returned as the total. There is an area at the bottom for the user to add any notes about the services and/or service delivery.
 
 ### Measurement Convertor
-![My Image](image/image-conversion-01.png)
-![My Image](image/image-conversion-02.png)
+![My Image](images/image-conversion-01.png)
+
+![My Image](images/image-conversion-02.png)
 
 This web application converts between metric and imperial units. The first part of the project was to create a measurement convertor with the value declared in the JavaScript code. The second part of the project was to create a convertor that takes user input and converts that value, and can change based on user input.
 
